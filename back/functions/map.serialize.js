@@ -1,0 +1,18 @@
+// This file is part of OneType. Created and led by Dejan Tomic <hi@iamdejan.com>, co-authored by Stefan Pakic, onetype.ai
+
+import database from '#database/addon.js';
+
+database.Fn('map.serialize', function(value, type)
+{
+    if(value === null || value === undefined)
+    {
+        return value;
+    }
+
+    if((type === 'object' || type === 'array') && typeof value !== 'string')
+    {
+        return JSON.stringify(value);
+    }
+
+    return value;
+});

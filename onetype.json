@@ -1,0 +1,10 @@
+{
+    "type": "addon",
+    "slug": "onetype/addon/database",
+    "name": "Database",
+    "description": "A layer over knex that gives every addon CRUD, find chains, auto-synced schema, translations, joins, and metrics on PostgreSQL.",
+    "icon": "database",
+    "color": "rgba(96, 165, 250, 1)",
+    "status": "enabled",
+    "depends": []
+}
